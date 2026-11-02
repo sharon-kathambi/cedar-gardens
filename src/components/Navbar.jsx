@@ -20,7 +20,7 @@ const Navbar = () => {
   let normalLink = "hover:opacity-50";
 
   return (
-    <header className="w-full pt-10">
+    <header className="w-full pt-6">
       <div className=" flex justify-between align-middle md:invisible w-5/6 mx-auto">
         <motion.img
           initial={{
@@ -70,18 +70,18 @@ const Navbar = () => {
                 className="flex flex-col text-left gap-3"
               >
                 <div>
-                  <span className="font-bold">Phone: </span>
-                  <a href="tel:+254 791 555 111">+254 791 555 111</a>
+                  <span className="sm:text-xs md:text-base font-bold">Phone: </span>
+                  <a className="sm:text-xs md:text-base" href="tel:+254 791 555 111">+254 791 555 111</a>
                 </div>
                 <div>
                   <span className="font-bold">Email: </span>
-                  <a href="mail:cedargarden.ltd@gmail.com">
+                  <a className="sm:text-sm md:text-base " href="mail:cedargarden.ltd@gmail.com">
                     cedargarden.ltd@gmail.com
                   </a>
                 </div>
                 <div>
-                  <p>
-                    <span className="font-bold">Location: </span>Kianjai, Meru
+                  <p className="sm:text-sm md:text-base ">
+                    <span className="sm:text-sm md:text-base font-bold">Location: </span>Kianjai, Meru
                   </p>
                 </div>
               </motion.div>
@@ -106,19 +106,19 @@ const Navbar = () => {
                   href="https://www.facebook.com/profile.php?id=100077381140421"
                   target="_blank"
                 >
-                  <FaFacebook color="#287216" fontSize="1.5em" />
+                  <FaFacebook color="#287216" fontSize="1.5rem" />
                 </a>
                 <a
                   href="tel:+254791555111
 "
                 >
-                  <IoLogoWhatsapp color="#287216" fontSize="1.5em" />
+                  <IoLogoWhatsapp color="#287216" fontSize="1.5rem" />
                 </a>
                 <a
                   href="https://www.instagram.com/cedargardensandhotel/"
                   target="_blank"
                 >
-                  <AiFillInstagram color="#287216" fontSize="1.5em" />
+                  <AiFillInstagram color="#287216" fontSize="1.5rem" />
                 </a>
               </motion.div>
             </div>
@@ -179,60 +179,60 @@ const Navbar = () => {
                         <div className="relative z-10">
                           <ul className="mt-4 flex flex-col align-items-center gap-2 text-left text-gray-800 divide-y divide-gray-300">
                             <li>
-                              <a
-                                href="/services/barandrestaurant"
+                              <Link
+                                to="/services/barandrestaurant"
                                 className="bg-transparent bg-clip-text text-black hover:text-primary-color py-1 block"
                               >
                                 RESTAURANT AND BAR
-                              </a>
+                              </Link>
                             </li>
                             <li>
-                              <a
-                                href="/services/kidsplayground"
+                              <Link
+                                to="/services/kidsplayground"
                                 className="bg-transparent bg-clip-text text-black hover:text-primary-color py-1 block"
                               >
                                 KIDS PLAYGROUND
-                              </a>
+                              </Link>
                             </li>
                             <li>
-                              <a
-                                href="/services/swimming"
+                              <Link
+                                to="/services/swimming"
                                 className="bg-transparent bg-clip-text text-black hover:text-primary-color py-1 block"
                               >
                                 SWIMMING
-                              </a>
+                              </Link>
                             </li>
                             <li>
-                              <a
-                                href="/services/meetings"
+                              <Link
+                                to="/services/meetings"
                                 className="bg-transparent bg-clip-text text-black hover:text-primary-color py-1 block"
                               >
                                 MEETINGS
-                              </a>
+                              </Link>
                             </li>
                             <li>
-                              <a
-                                href="/services/parties"
+                              <Link
+                                to="/services/parties"
                                 className="bg-transparent bg-clip-text text-black hover:text-primary-color py-1 block"
                               >
                                 PARTIES
-                              </a>
+                              </Link>
                             </li>
                             <li>
-                              <a
-                                href="/services/accomodation"
+                              <Link
+                                to="/services/accomodation"
                                 className="bg-transparent bg-clip-text text-black hover:text-primary-color py-1 block"
                               >
                                 ACCOMODATION
-                              </a>
+                              </Link>
                             </li>
                             <li>
-                              <a
-                                href="/services/photography"
+                              <Link
+                                to="/services/photography"
                                 className="bg-transparent bg-clip-text text-black hover:text-primary-color py-1 block"
                               >
                                 PHOTOGRAPHY
-                              </a>
+                              </Link>
                             </li>
                           </ul>
                         </div>
@@ -421,60 +421,60 @@ const Navbar = () => {
                       <div className="relative z-10">
                         <ul className="mt-4 flex flex-col align-items-center gap-2 text-left text-gray-800 divide-y divide-gray-300">
                           <li>
-                            <a
-                              href="/services/barandrestaurant"
+                            <Link
+                              to="/services/barandrestaurant"
                               className="bg-transparent bg-clip-text text-black hover:text-primary-color py-1 block"
                             >
                               RESTAURANT AND BAR
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a
-                              href="/services/kidsplayground"
+                            <Link
+                              to="/services/kidsplayground"
                               className="bg-transparent bg-clip-text text-black hover:text-primary-color py-1 block"
                             >
                               KIDS PLAYGROUND
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a
-                              href="/services/swimming"
+                            <Link
+                              to="/services/swimming"
                               className="bg-transparent bg-clip-text text-black hover:text-primary-color py-1 block"
                             >
                               SWIMMING
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a
-                              href="/services/meetings"
+                            <Link
+                              to="/services/meetings"
                               className="bg-transparent bg-clip-text text-black hover:text-primary-color py-1 block"
                             >
                               MEETINGS
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a
-                              href="/services/parties"
+                            <Link
+                              to="/services/parties"
                               className="bg-transparent bg-clip-text text-black hover:text-primary-color py-1 block"
                             >
                               PARTIES
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a
-                              href="/services/accomodation"
+                            <Link
+                              to="/services/accomodation"
                               className="bg-transparent bg-clip-text text-black hover:text-primary-color py-1 block"
                             >
                               ACCOMODATION
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a
-                              href="/services/photography"
+                            <Link
+                              to="/services/photography"
                               className="bg-transparent bg-clip-text text-black hover:text-primary-color py-1 block"
                             >
                               PHOTOGRAPHY
-                            </a>
+                            </Link>
                           </li>
                         </ul>
                       </div>
@@ -519,57 +519,5 @@ const Navbar = () => {
     </header>
   );
 
-  // return (
-  //   <div className="flex justify-between items-center my-8 mx-2 sm:mx-16">
-  //     <div>
-  //       <img src={Logo} alt="" />
-  //     </div>
-  //     <div className="block md:hidden">
-  //       <GiHamburgerMenu onClick={toggleMenu} />
-  //     </div>
-  //     <div
-  //       className="absolute top-0 sm:block p-5 sm:p-0 min-w-[200px] w-[100%]"
-  //       style={showMenu ? { display: "block" } : { display: "none" }}
-  //     >
-  //       <nav>
-  //         <RxCross2 onClick={toggleMenu} />
-
-  //         <ul className=" flex flex-col sm:flex-row justify-around font-josefin text-base md:text-lg text-black font-extrabold w-auto">
-  //           <Link to={"/"}>
-  //             <li className="my-2 mx-1 w-[100%] min-w-[100px] ">Home</li>
-  //           </Link>
-  //           <Link to={"/features"}>
-  //             <li className="my-2 mx-1 w-[100%] min-w-[100px] ">Features</li>
-  //           </Link>
-  //           <Link to={"/contact"}>
-  //             <li className="my-2 mx-1 w-[100%] min-w-[100px] ">Contact Us</li>
-  //           </Link>
-  //         </ul>
-  //       </nav>
-  //     </div>
-  //     <div className="hidden md:block">
-  //       <nav>
-  //         <ul className=" flex flex-col sm:flex-row justify-around font-josefin text-base md:text-lg text-black font-extrabold w-auto">
-  //           <Link to={"/"}>
-  //             <li className="mx-1 w-[100%] min-w-[100px] ">Home</li>
-  //           </Link>
-  //           <Link to={"/features"}>
-  //             <li className="mx-1 w-[100%] min-w-[100px] ">Features</li>
-  //           </Link>
-  //           <Link to={"/contact"}>
-  //             <li className="mx-1 w-[100%] min-w-[100px] ">Contact Us</li>
-  //           </Link>
-  //         </ul>
-  //       </nav>
-  //     </div>
-  //     <div className="hidden sm:block">
-  //       <Link to="/AvailableTenders">
-  //         <button className="bg-primary-color font-josefin text-white py-2 px-4 rounded-full">
-  //           Get Started
-  //         </button>
-  //       </Link>
-  //     </div>
-  //   </div>
-  // );
 };
 export default Navbar;
